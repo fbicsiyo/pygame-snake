@@ -1,8 +1,7 @@
 '''
 Snake game.
 Authors:
-<insert the names of your teammates here>
-'''
+Devonta Johnson, Kamera Reshard'''
 
 import pygame
 import random
@@ -28,15 +27,15 @@ DIRECTION_UP = (0, -1)
 DIRECTION_DOWN = (0, 1)
 
 # Background color of the snake grid.
-COLOR_BACKGROUND = (255, 255, 255)  # rgb color for white
+COLOR_BACKGROUND = (0, 0, 0)  # rgb color for green
 # This is the color of the snake's head. 
 COLOR_SNAKE_HEAD = (255, 0, 0)      # rgb color for red
 # This is the color of the rest of the snake.
-COLOR_SNAKE = (0, 255, 0)           # rgb color for green
+COLOR_SNAKE = (251, 228, 9)           # rgb color for yellow
 # This is the color for the snake's food.
 COLOR_FOOD = (255, 200, 0)          # rgb color for orange
 # This is the color for the game over text.
-COLOR_GAME_OVER_TEXT = (0, 0, 0)    # rgb color for black
+COLOR_GAME_OVER_TEXT = (255, 254, 255)    # rgb color for white
 
 def get_direction(previous_direction, event_key):
     """Return the new direction of the snake: one of DIRECTION_{LEFT,RIGHT,UP,DOWN}.
@@ -165,7 +164,7 @@ def draw_game_over(screen, game_over_text):
     screen.blit(text_surface, (x, y))
 
 def draw_screen(screen, snake, food, game_over):
-    """Draw the snake, food and maybe the game over message to the screen.
+    """Draw the snake, food and maybe the game over message C:/Users/dejoh71/AppData/Local/Programs/Python/Python36-32/to the screen.
     Do not edit this function.
     """
     # Fill the screen with the background color.
