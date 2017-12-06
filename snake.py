@@ -72,14 +72,23 @@ def snake_ate_food(snake, food):
     if snake[0] == food:
         return True
     else:
-    return False
+        return False
 
 def snake_ran_out_of_bounds(snake):
     """Returns whether the snake has ran off one of the four edges of the grid.
     snake - list of 2-tuples representing the positions of each snake segment
     Note that the grid is GRID_WIDTH cells wide and GRID_HEIGHT cells high.
     """
-    return False
+    if snake[0][0] == GRID_WIDTH:
+        return True
+    elif snake[0][1] == GRID_WIDTH:
+        return True
+    elif snake[0][0] == GRID_HEIGHT:
+        return True
+    elif snake[0][1] == GRID_HEIGHT:
+        return True
+    else:
+        return False
 
 def snake_intersected_body(snake):
     """Returns whether the snake has ran into itself.
